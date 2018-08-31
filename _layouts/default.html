@@ -1,0 +1,16 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+<body>
+	<div class="wrapper {{ page.permalink }}">
+		{% include navigation.html %}
+		<div class="main">
+			{{ content }}
+			{% include news.html %}
+		</div>
+	</div>
+</body>
+</html>

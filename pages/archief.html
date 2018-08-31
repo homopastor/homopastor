@@ -1,0 +1,15 @@
+---
+layout: default
+heading: Archief
+permalink: archief
+---
+
+<div class="foto"><img src="/assets/images/drieluik.jpg" title="WKHP Drieluik" alt="WKHP Drieluik" width="220" height="276"/></div>
+<div class="content">
+	<h1>Archief</h1>
+	
+	{% for archive in site.data.archive %}
+	<h2>{{ archive.title }}</h2>
+	<p>{{ archive.date }}<br/><br/><strong>Zie Artikel:</strong> <a target="_blank" href='{{ archive.link }}'>{{ archive.linktext }}</a></p>
+	{% endfor %}
+</div>

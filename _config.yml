@@ -1,0 +1,13 @@
+title: WKHP - Werkverband van Katholieke Homo-Pastores
+description: Het WKHP verenigt homoseksuele priesters, religieuzen en anderen die pastoraal werkzaam zijn in de rooms-katholieke kerk. Het WKHP heeft ongeveer 80 leden
+sitename: WKHP - Werkverband van Katholieke Homo-Pastores
+keywords: homopastor, homo, pastor, holebi, katholiek, homoseksueel, werkverband
+sass:
+  sass_dir: /assets/_sass
+  style: :compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE.txt
+  - CNAME

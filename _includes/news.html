@@ -1,0 +1,10 @@
+<div class="nieuws">
+	<h2>Nieuws</h2>
+	{% for newsitem in site.data.news %}
+	<p><strong>{{ newsitem.date }}</strong> {{ newsitem.title }} <a target='_blank' href='/assets/files/{{ newsitem.link }}'>Lees meer ></a></p>
+	{% endfor %}
+	<div class="contact-right">
+		<h2>Contact</h2>
+		<p><a href="mailto:contact@homopastor.nl">contact@homopastor.nl</a></p>
+    </div>
+</div>

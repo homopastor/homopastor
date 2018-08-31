@@ -1,0 +1,16 @@
+---
+layout: default
+heading: Publicaties
+permalink: publicaties
+---
+<div class="foto">
+	<img src="/assets/images/uitsnede.jpg" title="Uitsnede De Geloofsdoek door Jan Haen" alt="Uitsnede De Geloofsdoek door Jan Haen" width="220" height="156"/>
+</div>
+<div class="content">
+	<h1>Publicaties</h1>
+	
+	{% for publication in site.data.publications %}
+	<h2>{{ publication.title }}</h2>
+	<p>{{ publication.text }}<br/><br/><strong>Zie Artikel:</strong> <a target="_blank" href='/assets/files/{{ publication.link }}'>{{ publication.linktext }}</a></p>
+	{% endfor %}
+</div>
