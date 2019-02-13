@@ -315,7 +315,7 @@ a {
     .persverklaringen .main .nieuws,
     .archief .main .nieuws,
     .contact .main .nieuws,
-    .links .main .nieuws,
+    .links .main .nieuws
     {
         display: none;
     }
