@@ -309,6 +309,16 @@ a {
         order: 1;
         width: 100%;
     }
+	
+    .landelijke-dagen .main .nieuws,
+    .publicaties .main .nieuws,
+    .persverklaringen .main .nieuws,
+    .archief .main .nieuws,
+    .contact .main .nieuws,
+    .links .main .nieuws,
+    {
+        display: none;
+    }
 
     .footer {
         width: 100%;
