@@ -3,17 +3,16 @@ layout: default
 heading: Persverklaringen
 permalink: persverklaringen
 ---
-<div class="main">
-    <div class="foto"><img src="/assets/images/drieluik.jpg" title="WKHP Drieluik" alt="WKHP Drieluik" width="220" height="276"/></div>
-    <div class="content">
-	<h1>Persverklaringen</h1>
-    
-    {% for pressrelease in site.data.press %}
-	<h2>{{ pressrelease.title }}</h2>
-	<p>{{ pressrelease.date }}<br/><br/>
-	<strong>Zie Artikel:</strong> <a target="_blank" href='/assets/files/{{ pressrelease.link }}'>{{ pressrelease.linktext }}</a></p>
-	{% endfor %}
 
-	<h2>Oudere persverklaringen</h2>
-	<p>Zie voor oudere persverklaringen het <a href="/archief">archief</a>.</p>
-</div>
+<div class="foto"><img src="/assets/images/drieluik.jpg" title="WKHP Drieluik" alt="WKHP Drieluik" width="220" height="276"/></div>
+<div class="content">
+<h1>Persverklaringen</h1>
+
+{% for pressrelease in site.data.press %}
+<h2>{{ pressrelease.title }}</h2>
+<p>{{ pressrelease.date }}<br/><br/>
+<strong>Zie Artikel:</strong> <a target="_blank" href='/assets/files/{{ pressrelease.link }}'>{{ pressrelease.linktext }}</a></p>
+{% endfor %}
+
+<h2>Oudere persverklaringen</h2>
+<p>Zie voor oudere persverklaringen het <a href="/archief">archief</a>.</p>
