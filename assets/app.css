@@ -308,11 +308,6 @@ a {
         -webkit-order: 1; /* NEW - Chrome */
         order: 1;
         width: 100%;
-        display: none;
-    }
-
-    .index .main .nieuws {
-        display: block;
     }
 
     .footer {
