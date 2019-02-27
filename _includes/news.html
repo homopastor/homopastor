@@ -3,7 +3,7 @@
 	{% for newsitem in site.data.news %}
 	<p><strong>{{ newsitem.date }}</strong> {{ newsitem.title }} <a target='_blank' 
 									{% if newsitem.link == null %}
-										href='/assets/files/{{ newsitem.fulllink }}'
+										href='{{ newsitem.fulllink }}'
 									{% else %}
 										href='/assets/files/{{ newsitem.link }}'
 									{% endif %}
