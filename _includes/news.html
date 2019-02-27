@@ -1,7 +1,13 @@
 <div class="nieuws">
 	<h2>Nieuws</h2>
 	{% for newsitem in site.data.news %}
-	<p><strong>{{ newsitem.date }}</strong> {{ newsitem.title }} <a target='_blank' href='/assets/files/{{ newsitem.link }}'>Lees meer ></a></p>
+	<p><strong>{{ newsitem.date }}</strong> {{ newsitem.title }} <a target='_blank' 
+									{% if newsitem.link == null %}
+										href='/assets/files/{{ newsitem.fulllink }}'
+									{% else %}
+										href='/assets/files/{{ newsitem.link }}'
+									{% endif %}
+									>Lees meer ></a></p>
 	{% endfor %}
 	<div class="contact-right">
 		<h2>Contact</h2>
